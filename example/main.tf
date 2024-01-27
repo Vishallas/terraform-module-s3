@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "s3_bucket" {
-  source     = "../"
+  source     = "github.com/vishallas/terraform-module-s3"
   bucket     = local.bucket_name
   acl        = local.acl
   versioning = local.versioning
